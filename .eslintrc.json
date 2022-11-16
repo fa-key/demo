@@ -17,7 +17,8 @@
         "@angular-eslint/component-class-suffix": [
           "error",
           {
-            "suffixes": ["Page", "Component"]
+            "suffixes": ["Page", "Component"],
+            "object-shorthand": ["error", "always"]
           }
         ],
         "@angular-eslint/component-selector": [
@@ -31,9 +32,9 @@
         "@angular-eslint/directive-selector": [
           "error",
           {
-            "type": "attribute",
+            "type": "variable",
             "prefix": "app",
-            "style": "camelCase"
+            "style": "PascalCase"
           }
         ]
       }

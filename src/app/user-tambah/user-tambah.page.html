@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>user-tambah</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"> Tambah User </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label position="floating">Nama</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="nama"
+        placeholder="Nama User"
+        type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Merek</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="merek"
+        placeholder="Merek Motor User"
+        type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mesin</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="mesin"
+        placeholder="Mesin Motor User"
+        type="text"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Tanggal Service</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="tanggal"
+        placeholder="Tanggal User Terakhir Service"
+        type="number"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Rerata</ion-label>
+      <ion-input
+        required
+        [(ngModel)]="rerata"
+        placeholder="Rerata Penggunaan Motor User"
+        type="number"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button
+          type="button"
+          (click)="addUser()"
+          color="primary"
+          shape="full"
+          expand="block">Tambahkan</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>

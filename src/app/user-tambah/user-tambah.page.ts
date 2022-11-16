@@ -57,6 +57,16 @@ export class UserTambahPage implements OnInit {
           res.present();
         });
       this.router.navigateByUrl('/user');
+    },(error) => {
+      this.alertController
+        .create({
+          header: 'Notifikasi',
+          message: 'Gagal Input data',
+          buttons: ['OK'],
+        })
+        .then((res) => {
+          res.present();
+        });
     });
   }
 }

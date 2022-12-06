@@ -7,5 +7,4 @@ const config: CapacitorConfig = {
   bundledWebRuntime: false
 };
 
-
 export default config;

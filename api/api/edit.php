@@ -11,7 +11,6 @@ $mesin = $data['mesin'];
 $tanggal=  $data['tanggal'];
 $rerata = $data['rerata'];
 
-
 $query = mysqli_query($koneksi, "UPDATE user SET nama='$nama',  merek='$merek', mesin='$mesin', tanggal='$tanggal', rerata='$rerata' WHERE id='$id'");
 if($query){
     http_response_code(201);

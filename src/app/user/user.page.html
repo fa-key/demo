@@ -29,23 +29,24 @@
     >
   </ion-list>
   <ion-list>
-    <ion-list-header>List Data User nih</ion-list-header>
+    <ion-list-header>List Data Pelanggan</ion-list-header>
   </ion-list>
   <ion-card lines="inset" *ngFor="let user_value of user">
     <ion-item>
-      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-item name="person" slot="start"><ion-img src="https://img.icons8.com/color/96/null/collaborator-male-skin-type-2.png" style="width : 30% ; height : 100%"></ion-img>      
       <ion-label>{{ user_value.nama }}</ion-label>
+      </ion-item>
       <ion-button
         color="primary"
         slot="end"
         [routerLink]="['/user-edit/',user_value.id]"
         routerLinkActive="router-link-active"
-        >Edit</ion-button>
+        ><ion-img src="https://img.icons8.com/3d-plastilina/69/null/pencil--v1.png" style="width : 100% ; height : 100%"></ion-img></ion-button>
         <ion-button
         color="danger"
         slot="end"
         (click)="deleteUser(user_value.id)"
-        >Hapus</ion-button>
+        ><ion-img src="https://img.icons8.com/fluency/48/null/delete-forever.png" style="width : 100% ; height : 100%"></ion-img></ion-button>
     </ion-item>
   </ion-card>
 

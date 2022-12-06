@@ -24,5 +24,6 @@ export class ApiService {
   ambilUser(id){
     return this.http.get(this.apiURL()+'/lihat.php?id='+id);
   }
+  
 }
 
